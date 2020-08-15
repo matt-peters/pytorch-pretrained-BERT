@@ -36,10 +36,10 @@ else:
     try:
         import torch_xla  # noqa F401
 
-        logger.warning(
-            "The torch_xla package was detected in the python environment. PyTorch/XLA and JIT is untested,"
-            " no activation function will be traced with JIT."
-        )
+        #logger.warning(
+        #    "The torch_xla package was detected in the python environment. PyTorch/XLA and JIT is untested,"
+        #    " no activation function will be traced with JIT."
+        #)
     except ImportError:
         gelu_new = torch.jit.script(gelu_new)
 
