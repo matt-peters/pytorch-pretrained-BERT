@@ -972,11 +972,11 @@ class PreTrainedTokenizer(SpecialTokensMixin):
                 )
             )
 
-        for file_id, file_path in vocab_files.items():
-            if file_path == resolved_vocab_files[file_id]:
-                logger.info("loading file {}".format(file_path))
-            else:
-                logger.info("loading file {} from cache at {}".format(file_path, resolved_vocab_files[file_id]))
+        #for file_id, file_path in vocab_files.items():
+        #    if file_path == resolved_vocab_files[file_id]:
+        #        logger.info("loading file {}".format(file_path))
+        #    else:
+        #        logger.info("loading file {} from cache at {}".format(file_path, resolved_vocab_files[file_id]))
 
         # Prepare tokenizer initialization kwargs
         # Did we saved some inputs and kwargs to reload ?
